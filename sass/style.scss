@@ -1,0 +1,407 @@
+@import "__common";
+@import "__variable";
+
+%transition{
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+}
+%bttn{
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 8px 28px;
+    border-radius: 30px;
+	@extend %transition;
+}
+
+
+header{
+	background-color: $bg_color;
+	.navbar-brand{
+		img{
+			width: 150px;
+		}
+		}
+
+		.navbar-light{
+
+			.navbar-nav{
+				.nav-item{
+					
+					.nav-link{
+						color: $primary_color;
+						text-transform: capitalize;
+						@extend %bttn;
+						
+
+					    &:hover{
+					   	    background-color:$secondery_color;
+					    	color: #fff;
+					    }
+
+
+
+					}
+
+					&:last-child{
+						.nav-link{
+							background-color:$secondery_color;
+					    	color: #fff;
+					    	border-radius: 30px;
+
+						}
+					}
+				}
+			}
+		}
+   }
+   .top-banner{
+   	padding: 120px 0;
+   	.left-contant{
+   		h4{
+   			color: red;
+   			font-size: 15px;
+   		}
+   			   		
+   		h1{
+   			font-size: 72px;
+   			color: $primary_color;
+   			font-weight: 600
+   		}
+   		span{
+   			color: $secondery_color;
+   		}
+   		p{
+   			font-size: 16px;
+   			color:#000;
+   			opacity: 0.7;
+   			line-height: 2.0;
+   		}
+
+   	}
+   	.right{
+   		img{
+
+   		}
+   	}
+   }
+   .btn-custom{
+   	background-color: $secondery_color;
+   	color: #fff;
+   	@extend %bttn;
+   	border: 2px solid $secondery_color;
+
+       &:hover{
+	    background-color:transparent;
+	   	color:$secondery_color;
+   }
+
+   }
+
+   .books-section{
+   	    margin: 40px 0 70px 0;
+   	.book{
+   		background-color: $bg_color;
+   		padding: 40px;
+        text-align: center;
+        border-radius: 10px;
+        @extend %transition;
+
+        &:hover{
+        	background-color:#fff;
+            box-shadow: 0px 20px 30px #3333335e;
+
+        }
+}
+   		img{
+   			height: 80px;
+
+   		}
+   		h2{
+   			font-size: 23px;
+             font-weight: 600;
+             margin: 13px 0 0;
+             text-transform: capitalize;
+             color:$heading_color;
+
+   		}
+   		p{
+   			font-size: 16px;
+   			color:#000;
+   			opacity: 0.7;
+   			line-height: 2.0;
+   		}
+
+   	}
+
+   	.heading{
+   		text-align: center;
+   		h1{
+   			font-size: 45px;
+   			font-weight: 900;
+   			letter-spacing: 1px;
+   			color: $heading_color;
+   			 padding: 50px 0;
+   			 text-transform: capitalize;
+
+   		}
+   	}
+   	.coures-section{
+
+   		.course{
+		.card-body{
+			img{}
+			h5{
+				margin: 0;
+                text-transform: capitalize;
+                color: $heading_color;
+                padding: 15px 0;
+                font-size: 30px;
+                font-weight: 500;
+                color: $heading_color;
+			}
+			p{
+				font-size: 16px;
+				color:#333;
+				line-height: 2.0;
+			}
+			a{}
+			.nav{
+				    margin: 25px 0;
+				li{
+
+   			          font-size: 16px;
+   			          color:#000;
+   			          opacity: 0.7;
+   			          line-height: 2.0;
+					img{
+						width: 25px;
+					}
+					span{}
+
+				}
+			}
+
+		}
+	}
+   		
+   	}
+
+	.testimonial{
+		padding: 80px 0;
+		.testimonial-contant{
+			text-align: center;
+			margin-bottom: 65px;
+			h1{
+				text-transform: capitalize;
+    		    font-size: 45px;
+				font-weight: 700;
+   				color: #000;
+   				}
+
+
+			}
+			img{
+				width: 200px;
+			}
+			p{    
+				font-size: 16px;
+				color:#000;
+   			    opacity: 0.7;
+   			    line-height: 2.0;
+
+			}
+		}
+.footer{
+	background-color:#282531;
+	color:#fff;
+	padding: 45px 0;
+
+    .fotter-pera{
+    	color: #ffffffad;
+
+    }
+    .extra-margin{
+    	margin-right: 35px;
+    }
+
+
+	.copywrite{
+		text-align: center;
+		p{
+			margin-top: 60px ;
+			font-size: 16px;
+				color:#ffffff7d;
+   			    line-height: 2.0;
+   			    letter-spacing: 1.5px;
+		}
+	}
+	.list-unstyled{
+
+		h3{
+			text-transform: capitalize;
+			font-size: 20px;
+
+		}
+		li{
+
+		}
+
+		a{
+			    font-size: 16px;
+				color:#fff;
+   			    line-height: 2.0;
+   			    text-decoration: none;
+   			    font-weight: 200;
+
+
+
+		}
+
+	}
+}  
+
+
+
+
+
+@media (max-width: 1199px){
+	.top-banner .left-contant h1 {
+    font-size: 60px;
+}
+.books-section .book {
+    background-color: #F0FFF0;
+    padding: 17px;
+       }
+       .coures-section .course .card-body h5{
+       	    font-size: 27px;
+       }
+
+} 
+@media (max-width: 991px){
+	.navbar-nav {
+   
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .top-banner .left-contant h1 {
+    font-size: 45px   
+}
+.books-section h2 {
+    font-size: 16px; 
+}
+.books-section p {
+    font-size: 14px    
+}
+	.coures-section .course .card-body h5 {
+    font-size: 18px;
+    padding-bottom: 0;
+}
+.course .btn-custom{
+	font-size: 15px;
+}
+.coures-section .course .card-body p{
+
+}
+	
+}
+@media (max-width: 767px){
+	header .navbar-light .navbar-nav .nav-item .nav-link, .btn-custom {
+    font-size: 16px;
+     }
+     .left-contant{
+     	text-align: center;
+     	h1{
+          font-size: 40px;
+     	}
+     }
+      .top-banner .row{
+ 	text-align: center;
+ }
+ .right{
+ 	img{
+ 		max-width: 80%;
+ 		margin-top: 25px;
+ 	}
+ }
+ .books-section .book{
+ 	margin-bottom: 28px;
+ }
+ .books-section h2 {
+    font-size: 22px;
+}
+.course{
+	.btn-custom{
+		    padding: 8px 22px;
+		    font-size: 15px;
+
+	}
+
+}
+.course{
+	margin-bottom: 30px;
+}
+
+.coures-section .course .card-body .nav li:last-child{
+	display: none;
+}
+.course .card-body{
+	padding: 10px;
+}
+.coures-section .course .card-body .nav {
+    margin: 7px 0;
+}
+.testimonial p {
+    font-size: 12px;
+    color: #000;
+    opacity: 0.7; 
+    line-height: 1.5;
+       }
+         
+}
+
+@media (max-width: 575px){
+	.navbar-nav {
+   
+    -ms-flex-direction:column;
+    flex-direction: column;
+    text-align: center;
+  }
+  .top-banner {
+    padding: 70px 0;
+}
+.books-section h2 {
+    font-size: 18px;
+        }
+        .coures-section .course .card-body h5 {
+    font-size: 30px;
+         }
+         .course{
+	.btn-custom{
+		    padding: 8px 22px;
+		    font-size: 18px;
+
+	}
+    }
+    .testimonial p {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.testimonial .testimonial-contant {
+    text-align: center;
+    margin-bottom: 30px;
+        }
+        .testimonial {
+    padding: 50px 0;
+}
+  footer{
+  	text-align: center;
+  	padding-bottom: 10px;
+  }
+  .footer .copywrite p {
+    margin-top: 27px;
+       }
+    }
